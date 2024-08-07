@@ -1,0 +1,26 @@
+.newTask {
+  gap: 0.5rem;
+  width: 46rem;
+  display: flex;
+  align-items: center;
+  margin-top: -1.5625rem;
+}
+
+input {
+  width: 100%;;
+  padding: 16px;
+  border-style: none;
+  border-radius: 8px;
+  background-color: var(--gray-500);
+}
+
+button {
+  display: flex;
+  align-items: center;
+  background-color: var(--blue-dark);
+  border-style: none;
+  border-radius: 8px;
+  padding: 16px;
+  gap: 8px;
+  color: white;
+}
