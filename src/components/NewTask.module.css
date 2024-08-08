@@ -12,6 +12,7 @@ input {
   border-style: none;
   border-radius: 8px;
   background-color: var(--gray-500);
+  color: var(--gray-100);
 }
 
 button {
