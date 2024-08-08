@@ -1,0 +1,45 @@
+.counterWrapper {
+  width: 46rem;
+  display: flex;
+  margin: 4rem auto 0;
+  justify-content: space-between;
+}
+
+.tasksCreated {
+  color: var(--blue);
+  font-size: 0.875rem;
+}
+
+.tasksCompleted {
+  color: var(--purple);
+  font-size: 0.875rem;
+}
+
+.tasksCounter {
+  margin-left: 0.625rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 100px;
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+}
+
+.listWrapper {
+  width: 46rem;
+  margin: 3rem auto 1rem;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.emptyImage{
+    display: flex;
+    margin: 4rem 0 1rem 0;
+    justify-content: center;
+}
+
+.emptyText {
+  color: var(--gray-300);
+  font-size: 1rem;
+  text-align: center;
+}

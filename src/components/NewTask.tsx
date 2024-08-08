@@ -9,10 +9,7 @@ export function NewTask() {
   function handleCreateTask(event: FormEvent) {
     event.preventDefault();
     if (newTask !== "") {
-      setTasks((prevTasks) => {
-        const updatedTasks = [...prevTasks, newTask];
-        return updatedTasks;
-      });
+      setTasks((prevTasks) => [...prevTasks, newTask]);
       setNewTask("");
     }
   }
