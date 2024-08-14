@@ -7,7 +7,12 @@ export function Task(props: any) {
 
   const handleCheckTask = () => {
     setTaskChecked(taskChecked => !taskChecked);
+    props.onCheckTask(props.task);
   };
+
+  function handleDeleteTask() {
+    props.onDeleteTask(props.task);
+  }
 
   return (
     <div>
@@ -27,9 +32,9 @@ export function Task(props: any) {
         <p className={taskChecked ? styles.paragraphCkeched : styles.paragraph}>
           {props.task}
         </p>
-      <button className={styles.trashbtn}>
-        <Trash size={20} />
-      </button>
+        <button className={styles.trashbtn} onClick={handleDeleteTask}>
+          <Trash size={20} />
+        </button>
       </div>
     </div>
   );
