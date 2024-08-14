@@ -35,3 +35,9 @@ p {
 .paragraph{
   color: var(--gray-100);
 }
+
+.taskContent {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

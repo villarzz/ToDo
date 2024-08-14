@@ -17,21 +17,23 @@ export function Task(props: any) {
   return (
     <div>
       <div className={styles.taskWrapper}>
-        <button className={styles.checkbtn} onClick={handleCheckTask}>
-          {taskChecked ? (
-            <CheckCircle
-              color="#5e60ce"
-              weight="fill"
-              className={styles.check}
-              size={24}
-            />
-          ) : (
-            <Circle weight="bold" size={24} />
-          )}
-        </button>
-        <p className={taskChecked ? styles.paragraphCkeched : styles.paragraph}>
-          {props.task}
-        </p>
+        <div className={styles.taskContent}>
+            <button className={styles.checkbtn} onClick={handleCheckTask}>
+            {taskChecked ? (
+                <CheckCircle
+                color="#5e60ce"
+                weight="fill"
+                className={styles.check}
+                size={24}
+                />
+            ) : (
+                <Circle weight="bold" size={24} />
+            )}
+            </button>
+            <p className={taskChecked ? styles.paragraphCkeched : styles.paragraph}>
+            {props.task}
+            </p>
+        </div>
         <button className={styles.trashbtn} onClick={handleDeleteTask}>
           <Trash size={20} />
         </button>
