@@ -2,6 +2,7 @@ import styles from "./NewTask.module.css";
 import { PlusCircle } from "phosphor-react";
 import Clipboard from "../assets/Clipboard.svg";
 import { FormEvent, useState } from "react";
+import { Task } from "./Task";
 
 export function NewTask() {
   const [tasks, setTasks] = useState<string[]>([]);
@@ -24,7 +25,7 @@ export function NewTask() {
           value={newTask}
           onChange={e => setNewTask(e.target.value)}
         />
-        <button type="submit">
+        <button className={styles.button} type="submit">
           Criar <PlusCircle size={16} />
         </button>
       </form>
@@ -50,7 +51,7 @@ export function NewTask() {
         </p>
       </div> */}
       <div className={styles.listWrapper}>
-        
+       <Task></Task>
       </div>
     </div>
   );
