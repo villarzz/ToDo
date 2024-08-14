@@ -1,7 +1,7 @@
 import styles from "./NewTask.module.css";
 import { PlusCircle } from "phosphor-react";
 import Clipboard from "../assets/Clipboard.svg";
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { Task } from "./Task";
 
 export function NewTask() {
@@ -15,6 +15,10 @@ export function NewTask() {
       setNewTask("");
     }
   }
+
+  useEffect(() => {
+    console.log(tasks);
+  }, [tasks]);
 
   return (
     <div>
@@ -51,7 +55,9 @@ export function NewTask() {
         </p>
       </div> */}
       <div className={styles.listWrapper}>
-       <Task></Task>
+        {tasks.map((task, index) => (
+          <Task key={index} task={task} />
+        ))}
       </div>
     </div>
   );

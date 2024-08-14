@@ -7,7 +7,7 @@
 }
 
 input {
-  width: 100%;;
+  width: 100%;
   padding: 16px;
   border-style: none;
   border-radius: 8px;
@@ -25,7 +25,6 @@ input {
   gap: 8px;
   color: white;
 }
-
 
 .counterWrapper {
   width: 46rem;
@@ -53,7 +52,6 @@ input {
 }
 
 .listWrapper {
-    outline: 2px solid red;
   width: 46rem;
   margin: 3rem auto 1rem;
   border-top: 1px solid var(--gray-400);
@@ -62,10 +60,10 @@ input {
   flex-direction: column;
 }
 
-.emptyImage{
-    display: flex;
-    margin: 4rem 0 1rem 0;
-    justify-content: center;
+.emptyImage {
+  display: flex;
+  margin: 4rem 0 1rem 0;
+  justify-content: center;
 }
 
 .emptyText {
