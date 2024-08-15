@@ -25,7 +25,7 @@ export function NewTask() {
     setTaskChecked(taskChecked => taskChecked - 1);
   }
 
-  function checkTask(taskToCheck: string[]) {
+  function checkTask() {
     setTaskChecked(taskChecked => taskChecked + 1);
   }
 
