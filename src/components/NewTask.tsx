@@ -22,7 +22,9 @@ export function NewTask() {
       return task !== taskToDelete;
     });
     setTasks(tasksWithoutDeletedOne);
-    setTaskChecked(taskChecked => taskChecked - 1);
+    if(taskChecked > 0){
+      setTaskChecked(taskChecked => taskChecked - 1);
+    }
   }
 
   function checkTask() {
